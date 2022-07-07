@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  /* Fonts */
+  --poppins: "poppins";
+  --montserrat: "Montserrat";
+
+  /* Colors */
+  --dark: #121010;
+  --light: #e6eef1;
+  --icons: #a9b4b8;
+  --white: #e3e3da;
+  --black: #13151a;
+  --gray: #8c8f95;
+}
+
+body {
+  font-family: "Poppins", "Montserrat";
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+a {
+  color: var(--light);
+  text-decoration: none;
+}
+
+.active {
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+label span {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  color: #aaa;
+  font-size: 0.7em;
+}
+
+input {
+  background-color: var(--dark);
+  color: #aaa;
+  border: 1px solid var(--gray);
+  padding: 10px 8px;
+  outline: none;
+  margin-bottom: 0.6em;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+.btn,
+button,
+input[type="submit"] {
+  background-color: #0094f6;
+  color: var(--light);
+  border: none;
+  border-radius: 4px;
+  padding: 10px 8px;
+  font-weight: 700;
+  cursor: pointer;
+  opacity: 0.8;
+  font-size: 1em;
+}
+
+input[type="submit"] {
+  margin-top: 1em;
+}
+
+input:disabled {
+  cursor: not-allowed;
+  background-color: var(--black);
+}
+
+button:hover,
+.btn:hover,
+input[type="submit"]:hover {
+  opacity: 1;
+}
+.cancel-btn {
+  background-color: #ccc;
+}
+
+.hide {
+  display: none;
+}
